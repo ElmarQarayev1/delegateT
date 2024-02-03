@@ -13,7 +13,6 @@ namespace DelegateTask
 			examPoint.Add(examName, point);
 
 		}
-
 		public double GetExamResult(string examName)
 		{
 			if (examPoint.ContainsKey(examName))
@@ -42,6 +41,11 @@ namespace DelegateTask
 
             return totalPoint / examPoint.Count;
         }
+        public override string ToString()
+        {
+			return $"{FullName}-{No}-{examPoint}";
+        }
     }
+
 }
 

@@ -84,7 +84,7 @@ static void AddExam(List<Student> students)
     if(studentNo > students.Count)
     {
         Console.WriteLine("telebenin nomresi telebelerin sayindan cox ola bilmez!");
-        goto studentNo1;
+        return;
     }
 examName1:
     Console.WriteLine("imtahan adini daxil edin:");
@@ -103,11 +103,15 @@ examName1:
         Console.WriteLine("duzgun daxil edin:");
         goto examPoint1;
     }
+    if(examPoint<0 || examPoint > 100)
+    {
+        Console.WriteLine("exam pointi 0 la 100 arasinda olmalidir!");
+        goto examPoint1;
+    }
     students[studentNo - 1].AddExam(examName.Trim(), examPoint);
 }
 static void LookOneExam(List<Student> students)
 {
-
     studentNo2:
     Console.WriteLine("Baxmaq istediyiniz telebe nomresini daxil edin:");
     string studentNoStr = Console.ReadLine();
@@ -125,7 +129,7 @@ static void LookOneExam(List<Student> students)
     if (studentNo > students.Count)
     {
         Console.WriteLine("telebenin nomresi telebelerin sayindan cox ola bilmez!");
-        goto studentNo2;
+        return;
     }
 examName2:
     Console.WriteLine("baxmaq istediyiniz imtahan adini daxil edin:");
@@ -166,7 +170,7 @@ static void LookAllExams(List<Student> students)
     if (studentNo > students.Count)
     {
         Console.WriteLine("telebenin nomresi telebelerin sayindan cox ola bilmez!");
-        goto studentNo3;
+        return;
     }
     Student student = students[studentNo - 1];
 
@@ -196,7 +200,7 @@ static void AvarageExamsPointForStudent(List<Student> students)
     if (studentNo > students.Count)
     {
         Console.WriteLine("telebenin nomresi telebelerin sayindan cox ola bilmez!");
-        goto studentNo4;
+        return;
     }
     Student student = students[studentNo - 1];
 
@@ -214,7 +218,7 @@ static void AvarageExamsPointForStudent(List<Student> students)
 static void RemoveExam(List<Student> students)
 {
 studentNo5:
-    Console.WriteLine("silmek istediyiniz telebe nomresini daxil edin:");
+    Console.WriteLine("silmek istediyiniz exam ucun telebe nomresini daxil edin:");
     string studentNoStr = Console.ReadLine();
     int studentNo;
     if (!int.TryParse(studentNoStr, out studentNo))
@@ -230,7 +234,7 @@ studentNo5:
     if (studentNo > students.Count)
     {
         Console.WriteLine("telebenin nomresi telebelerin sayindan cox ola bilmez!");
-        goto studentNo5;
+        return;
     }
     examName1:
     Console.WriteLine("imtahan adini daxil edin:");
@@ -241,7 +245,7 @@ studentNo5:
         goto examName1;
     }
     Student student = students[studentNo - 1];
-    bool check = students[studentNo - 1].examPoint.Remove(examName);
+    bool check = students[studentNo - 1].examPoint.Remove(examName.Trim());
     if (check)
     {
         Console.WriteLine($"{studentNo} nomreli {student.FullName} ucun {examName} imtahani silindi");

@@ -41,10 +41,6 @@ namespace DelegateTask
 
             return totalPoint / examPoint.Count;
         }
-        public override string ToString()
-        {
-			return $"{FullName}-{No}-{examPoint}";
-        }
     }
 
 }

@@ -1,12 +1,41 @@
-﻿using System;
+using System;
 namespace DelegateTask
 {
 	public class Student
 	{
-	
-		public int No;
-		public string FullName;
-	    public Dictionary<string, double> examPoint = new Dictionary<string, double>();
+		private int _no;
+		private string _fullName;
+
+		public int No
+		{
+			get
+			{
+			    return _no;
+			}
+			set
+			{
+			      if (value > 0)
+			      { 
+				  _no = value;
+			      }
+			}
+		}
+		public string FullName
+		{
+			get
+			{
+			    return _fullName;
+
+			}
+			set
+			{
+				if (value.CheckFullname())
+				{
+					_fullName = value;
+				}
+			}
+		}
+		public Dictionary<string, double> examPoint = new Dictionary<string, double>();
 
 		public void AddExam(string examName, double point)
 		{
@@ -26,22 +55,23 @@ namespace DelegateTask
 			}
 
 		}
-        public double GetExamAvg()
-        {
-            if (examPoint.Count == 0)
-            {
+		public double GetExamAvg()
+		{
+			if (examPoint.Count == 0)
+			{
 				return -1;
-            }
+			}
 
-            double totalPoint = 0;
-            foreach (var item in examPoint.Values)
-            {
-                totalPoint += item;
-            }
+			double totalPoint = 0;
+			foreach (var item in examPoint.Values)
+			{
+				totalPoint += item;
+			}
 
-            return totalPoint / examPoint.Count;
-        }
-    }
+			return totalPoint / examPoint.Count;
 
+		}
+
+	}
 }
 

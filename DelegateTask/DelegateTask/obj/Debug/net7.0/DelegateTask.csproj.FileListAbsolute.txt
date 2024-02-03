@@ -1,0 +1,15 @@
+/Users/elmar/Desktop/CodeAcademy/Homeworks/delegatetask/DelegateTask/DelegateTask/bin/Debug/net7.0/DelegateTask
+/Users/elmar/Desktop/CodeAcademy/Homeworks/delegatetask/DelegateTask/DelegateTask/bin/Debug/net7.0/DelegateTask.deps.json
+/Users/elmar/Desktop/CodeAcademy/Homeworks/delegatetask/DelegateTask/DelegateTask/bin/Debug/net7.0/DelegateTask.runtimeconfig.json
+/Users/elmar/Desktop/CodeAcademy/Homeworks/delegatetask/DelegateTask/DelegateTask/bin/Debug/net7.0/DelegateTask.dll
+/Users/elmar/Desktop/CodeAcademy/Homeworks/delegatetask/DelegateTask/DelegateTask/bin/Debug/net7.0/DelegateTask.pdb
+/Users/elmar/Desktop/CodeAcademy/Homeworks/delegatetask/DelegateTask/DelegateTask/obj/Debug/net7.0/DelegateTask.csproj.AssemblyReference.cache
+/Users/elmar/Desktop/CodeAcademy/Homeworks/delegatetask/DelegateTask/DelegateTask/obj/Debug/net7.0/DelegateTask.GeneratedMSBuildEditorConfig.editorconfig
+/Users/elmar/Desktop/CodeAcademy/Homeworks/delegatetask/DelegateTask/DelegateTask/obj/Debug/net7.0/DelegateTask.AssemblyInfoInputs.cache
+/Users/elmar/Desktop/CodeAcademy/Homeworks/delegatetask/DelegateTask/DelegateTask/obj/Debug/net7.0/DelegateTask.AssemblyInfo.cs
+/Users/elmar/Desktop/CodeAcademy/Homeworks/delegatetask/DelegateTask/DelegateTask/obj/Debug/net7.0/DelegateTask.csproj.CoreCompileInputs.cache
+/Users/elmar/Desktop/CodeAcademy/Homeworks/delegatetask/DelegateTask/DelegateTask/obj/Debug/net7.0/DelegateTask.dll
+/Users/elmar/Desktop/CodeAcademy/Homeworks/delegatetask/DelegateTask/DelegateTask/obj/Debug/net7.0/refint/DelegateTask.dll
+/Users/elmar/Desktop/CodeAcademy/Homeworks/delegatetask/DelegateTask/DelegateTask/obj/Debug/net7.0/DelegateTask.pdb
+/Users/elmar/Desktop/CodeAcademy/Homeworks/delegatetask/DelegateTask/DelegateTask/obj/Debug/net7.0/DelegateTask.genruntimeconfig.cache
+/Users/elmar/Desktop/CodeAcademy/Homeworks/delegatetask/DelegateTask/DelegateTask/obj/Debug/net7.0/ref/DelegateTask.dll

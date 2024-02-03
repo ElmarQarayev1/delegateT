@@ -245,7 +245,7 @@ studentNo5:
         goto examName1;
     }
     Student student = students[studentNo - 1];
-    bool check = students[studentNo - 1].examPoint.Remove(examName.Trim());
+    bool check = students[studentNo - 1].examPoint.Remove(examName);
     if (check)
     {
         Console.WriteLine($"{studentNo} nomreli {student.FullName} ucun {examName} imtahani silindi");

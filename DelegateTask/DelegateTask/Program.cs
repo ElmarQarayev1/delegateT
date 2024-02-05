@@ -123,7 +123,7 @@ static void LookOneExam(List<Student> students)
     }
     if (studentNo <= 0)
     {
-        Console.WriteLine("menfi ola bilmez ve ya menfi ola bilmez!");
+        Console.WriteLine("menfi ola bilmez ve ya 0 ola bilmez!");
         goto studentNo2;
     }
     if (studentNo > students.Count)
